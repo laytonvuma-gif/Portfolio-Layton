@@ -1,0 +1,216 @@
+
+/* 1. Configurações gerais */
+
+:root {
+    --fundo: #080B12;
+    --fundo-secundario: #101622;
+    --azul: #172B4D;
+    --vermelho: #8F101B;
+    --branco: #F4F3EE;
+    --cinza: #A5ADBB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* 2. Navegação */
+
+header {
+    width: 100%;
+    padding: 24px 8%;
+    background-color: rgba(8, 11, 18, 0.96);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -2px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--cinza);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: var(--branco);
+}
+
+/* 3. Secção principal */
+
+#inicio {
+    min-height: 78vh;
+    padding: 110px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background:
+        radial-gradient(
+            ellipse at 85% 35%,
+            rgba(23, 43, 77, 0.65),
+            transparent 45%
+        ),
+        var(--fundo);
+}
+
+#inicio > p:first-child {
+    color: #E36B73;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+#inicio h1 {
+    max-width: 900px;
+    font-size: clamp(42px, 7vw, 82px);
+    line-height: 1.08;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+
+#inicio h1 span {
+    color: #D85B65;
+}
+
+#inicio h2 {
+    color: var(--cinza);
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+#inicio p:not(:first-child) {
+    max-width: 600px;
+    color: var(--cinza);
+    margin-bottom: 30px;
+}
+
+/* 4. Ligações de destaque */
+
+#inicio > a,
+#contacto > a {
+    display: inline-block;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 14px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+#inicio > a:hover,
+#contacto > a:hover {
+    background-color: #B51D2A;
+    transform: translateY(-2px);
+}
+
+/* 5. Secções secundárias */
+
+#sobre,
+#servicos,
+#contacto {
+    padding: 85px 8%;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+#sobre,
+#contacto {
+    background-color: var(--fundo-secundario);
+}
+
+#sobre h2,
+#servicos h2,
+#contacto h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+    letter-spacing: -1px;
+}
+
+#sobre p,
+#servicos p,
+#contacto p {
+    max-width: 700px;
+    color: var(--cinza);
+    margin-bottom: 24px;
+}
+
+/* 6. Rodapé */
+
+footer {
+    padding: 25px 8%;
+    text-align: center;
+    color: var(--cinza);
+    font-size: 13px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 7. Adaptação a telemóveis */
+
+@media (max-width: 650px) {
+    header {
+        padding: 20px 6%;
+    }
+
+    nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 14px 20px;
+    }
+
+    #inicio {
+        min-height: 70vh;
+        padding: 80px 6%;
+    }
+
+    #inicio h1 {
+        letter-spacing: -1.5px;
+    }
+
+    #sobre,
+    #servicos,
+    #contacto {
+        padding: 65px 6%;
+    }
+}
