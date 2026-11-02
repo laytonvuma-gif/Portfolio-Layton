@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -6,64 +5,1076 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio profissional de Layton Vuma — Tecnologia e Gestão de TIC.">
     <title>Layton Vuma | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="site-header">
         <nav>
-            <a href="#" class="logo">LV.</a>
+            <div class="logo">
+    <a href="index.php" aria-label="Layton Vuma — Página inicial">
+        <img
+            src="images/LV-logo.png"
+            alt="Logótipo de Layton Vuma"
+            width="58"
+            height="58"
+        >
+    </a>
+</div>
 
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul id="menu">
+                <li><a href="#inicio" data-i18n="nav_home">Início</a></li>
+                <li><a href="#sobre" data-i18n="nav_about">Sobre mim</a></li>
+                <li><a href="#servicos" data-i18n="nav_services">Serviços</a></li>
+                <li><a href="#projectos" data-i18n="nav_projects">Projectos</a></li>
+                <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
             </ul>
+
+            <div class="nav-tools">
+                <div class="lang">
+                    <button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Idioma / Language">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+                        <span id="lang-current">PT</span>
+                        <svg class="chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <ul class="lang-menu">
+                        <li><button type="button" data-lang="pt">Português</button></li>
+                        <li><button type="button" data-lang="en">English</button></li>
+                    </ul>
+                </div>
+
+                <button type="button" class="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <p>TECNOLOGIA · INOVAÇÃO · SOLUÇÕES DIGITAIS</p>
 
-            <h1>Olá, sou <span>Layton Vuma.</span></h1>
+        <section id="inicio" class="hero">
+            <span class="hero-ghost" aria-hidden="true">Tecnologia</span>
 
-            <h2>Transformo ideias em soluções digitais.</h2>
+            <div class="hero-text">
+                <p class="hero-intro" data-i18n="hero_intro">Olá, sou</p>
+                <h1 style="color: #8F101B;">Layton Vuma</h1>
+                <h2 data-i18n="hero_role">Engenharia e Gestão de Tecnologias de Informação e Comunicação</h2>
+            </div>
 
-            <p>
-                Engenharia e Gestão de Tecnologias de Informação
-                e Comunicação.
-            </p>
+            <div class="hero-visual">
+                <img src="images/layton-vuma.png" class="hero-photo"
+                     alt="Layton Vuma com fato formal escuro e gravata vermelha"
+                     data-i18n-alt="hero_alt" />
+            </div>
 
-            <a href="#servicos">Conhecer os meus serviços</a>
-        </section>
-
-        <section id="sobre">
-            <h2>Sobre mim</h2>
-            <p>
-                Sou apaixonado por tecnologia e pelo desenvolvimento
-                de soluções digitais que ajudam pessoas e empresas.
-            </p>
-        </section>
-
-        <section id="servicos">
-            <h2>Os meus serviços</h2>
-            <p>Desenvolvimento web, soluções digitais e apoio tecnológico.</p>
-        </section>
-
-        <section id="contacto">
-            <h2>Vamos conversar?</h2>
-            <p>Entre em contacto para discutirmos o seu próximo projecto.</p>
-            <a href="https://www.instagram.com/layvuma/" target="_blank" rel="noopener noreferrer">
-                Falar comigo no Instagram
+            <a href="#sobre" class="hero-card">
+                <div class="hero-card-head">
+                    <h3 data-i18n="card_title">Sobre mim</h3>
+                    <span class="arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+                    </span>
+                </div>
+                <p data-i18n="card_text">
+                    Transformo ideias em soluções digitais, combinando tecnologia,
+                    criatividade e visão prática para responder a desafios reais.
+                </p>
             </a>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Layton Vuma. Todos os direitos reservados.</p>
+
+
+<section id="sobre" class="block about">
+    <div class="block-inner ab-layout">
+
+        <div class="ab-text">
+            <h2>
+                <span class="strong" data-i18n="about_h1">Tecnologia com propósito.</span>
+                <span data-i18n="about_h2">Resultados com impacto.</span>
+            </h2>
+
+            <p class="lead" data-i18n="about_text">
+                Sou Layton Vuma, ligado à Engenharia e Gestão de
+                Tecnologias de Informação e Comunicação. Interesso-me
+                pelo desenvolvimento web, pelo desenvolvimento de software
+                e pelas soluções digitais, e pela forma como a tecnologia
+                pode resolver problemas reais e criar valor para pessoas
+                e organizações.
+            </p>
+
+            <p class="note" data-i18n="about_note">Desenvolvimento contínuo. Visão prática. Foco em soluções.</p>
+
+            <dl class="ab-facts">
+                <div>
+                    <dt data-i18n="sb_k1">Área</dt>
+                    <dd data-i18n="sb_v1">Engenharia e Gestão de TIC</dd>
+                </div>
+                <div>
+                    <dt data-i18n="sb_k2">Foco</dt>
+                    <dd data-i18n="sb_v2">Web e software à medida</dd>
+                </div>
+                <div>
+                    <dt data-i18n="sb_k3">Base</dt>
+                    <dd data-i18n="sb_v3">Moçambique</dd>
+                </div>
+            </dl>
+        </div>
+        <div class="ab-stack">
+            <div class="ab-stack-head">
+                <span data-i18n="sb_how">Como construo</span>
+                <span class="mono" data-i18n="sb_layers">4 camadas</span>
+            </div>
+
+            <ol class="ab-layers">
+                <li class="ab-layer">
+                    <span class="node" aria-hidden="true"></span>
+                    <span class="idx" aria-hidden="true">01</span>
+                    <h3 data-i18n="sb_l1_t">Análise e desenho</h3>
+                    <p class="tech" data-i18n="sb_l1_s">Análise de sistemas · UML</p>
+                    <p class="desc" data-i18n="sb_l1_d">Requisitos, fluxos e modelação do sistema.</p>
+                </li>
+                <li class="ab-layer">
+                    <span class="node" aria-hidden="true"></span>
+                    <span class="idx" aria-hidden="true">02</span>
+                    <h3 data-i18n="sb_l2_t">Interface</h3>
+                    <p class="tech">HTML · CSS · JavaScript</p>
+                    <p class="desc" data-i18n="sb_l2_d">Páginas responsivas, claras e fáceis de utilizar.</p>
+                </li>
+                <li class="ab-layer">
+                    <span class="node" aria-hidden="true"></span>
+                    <span class="idx" aria-hidden="true">03</span>
+                    <h3 data-i18n="sb_l3_t">Lógica</h3>
+                    <p class="tech">PHP</p>
+                    <p class="desc" data-i18n="sb_l3_d">Regras de negócio, perfis de acesso e painéis administrativos.</p>
+                </li>
+                <li class="ab-layer">
+                    <span class="node" aria-hidden="true"></span>
+                    <span class="idx" aria-hidden="true">04</span>
+                    <h3 data-i18n="sb_l4_t">Dados</h3>
+                    <p class="tech">MySQL</p>
+                    <p class="desc" data-i18n="sb_l4_d">Modelação e armazenamento seguro da informação.</p>
+                </li>
+            </ol>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section id="servicos" class="block services-section">
+    <div class="block-inner">
+
+        <div class="services-heading">
+            <span class="services-kicker">
+                <span class="kicker-line"></span>
+                <span data-i18n="serv_label">ÁREAS DE ACTUAÇÃO</span>
+            </span>
+
+            <h2 data-i18n="serv_title">Tecnologia aplicada a desafios reais.</h2>
+
+            <p class="lead" data-i18n="serv_text">
+                Desenvolvo soluções digitais que combinam engenharia,
+                funcionalidade e pensamento visual para responder
+                às necessidades de pessoas e organizações.
+            </p>
+        </div>
+
+        <div class="sv-layout paused-view">
+
+            <!-- Lista de serviços (selector) -->
+            <div class="sv-tabs" role="tablist" aria-orientation="vertical" aria-label="Serviços">
+
+                <button type="button" class="sv-tab is-active" role="tab" id="sv-t1" aria-controls="sv-p1" aria-selected="true">
+                    <span class="sv-num">01</span>
+                    <span class="sv-label">
+                        <span class="sv-cat">DEVELOPMENT</span>
+                        <span class="sv-name" data-i18n="s1_t">Desenvolvimento Web</span>
+                    </span>
+                    <span class="sv-go" aria-hidden="true">↗</span>
+                    <span class="sv-progress" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="sv-tab" role="tab" id="sv-t2" aria-controls="sv-p2" aria-selected="false" tabindex="-1">
+                    <span class="sv-num">02</span>
+                    <span class="sv-label">
+                        <span class="sv-cat">SOFTWARE</span>
+                        <span class="sv-name" data-i18n="s2_t">Sistemas e Soluções Digitais</span>
+                    </span>
+                    <span class="sv-go" aria-hidden="true">↗</span>
+                    <span class="sv-progress" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="sv-tab" role="tab" id="sv-t3" aria-controls="sv-p3" aria-selected="false" tabindex="-1">
+                    <span class="sv-num">03</span>
+                    <span class="sv-label">
+                        <span class="sv-cat">DIGITAL DESIGN</span>
+                        <span class="sv-name" data-i18n="s3_t">Design Digital e Comunicação Visual</span>
+                    </span>
+                    <span class="sv-go" aria-hidden="true">↗</span>
+                    <span class="sv-progress" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="sv-tab" role="tab" id="sv-t4" aria-controls="sv-p4" aria-selected="false" tabindex="-1">
+                    <span class="sv-num">04</span>
+                    <span class="sv-label">
+                        <span class="sv-cat">TECHNOLOGY</span>
+                        <span class="sv-name" data-i18n="s4_t">Consultoria e Apoio Tecnológico</span>
+                    </span>
+                    <span class="sv-go" aria-hidden="true">↗</span>
+                    <span class="sv-progress" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!-- Palco: figura técnica + detalhes -->
+            <div class="sv-stage">
+
+                <!-- 01 · Desenvolvimento Web -->
+                <div class="sv-panel is-active" id="sv-p1" role="tabpanel" aria-labelledby="sv-t1">
+                    <div class="sv-fig fig-web" aria-hidden="true">
+                        <span class="sv-figlabel">FIG. 01</span>
+                        <div class="w-browser">
+                            <div class="w-top"><i></i><i></i><i></i><span class="w-url"></span></div>
+                            <div class="w-body">
+                                <div class="w-hero">
+                                    <span class="sk l1"></span>
+                                    <span class="sk l2"></span>
+                                    <span class="sk btn"></span>
+                                </div>
+                                <div class="w-cols"><span class="sk"></span><span class="sk"></span><span class="sk"></span></div>
+                            </div>
+                        </div>
+                        <span class="w-bp"><b class="a">1280 px</b><b class="b">390 px</b></span>
+                    </div>
+                    <div class="sv-info">
+                        <p class="sv-desc" data-i18n="s1_p">
+                            Desenvolvimento de websites institucionais, plataformas web e interfaces
+                            responsivas, com foco na performance, acessibilidade e experiência do utilizador.
+                        </p>
+                        <div class="sv-cols">
+                            <div>
+                                <h4 data-i18n="sv_deliver">Entregas</h4>
+                                <ul>
+                                    <li data-i18n="sv_d1_1">Websites institucionais</li>
+                                    <li data-i18n="sv_d1_2">Plataformas web</li>
+                                    <li data-i18n="sv_d1_3">Interfaces responsivas</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 data-i18n="sv_focus">Foco</h4>
+                                <p class="sv-focus" data-i18n="sv_f1">Performance · Acessibilidade · Experiência do utilizador</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 02 · Sistemas e Soluções Digitais -->
+                <div class="sv-panel" id="sv-p2" role="tabpanel" aria-labelledby="sv-t2">
+                    <div class="sv-fig fig-sys" aria-hidden="true">
+                        <span class="sv-figlabel">FIG. 02</span>
+                        <svg class="db" viewBox="0 0 520 250">
+                            <path class="rel" d="M158 76 C 176 76 176 198 194 198"/>
+                            <path class="rel" d="M326 154 C 344 154 344 94 362 94"/>
+
+                            <g class="tbl" style="--d:.05s" transform="translate(26 30)">
+                                <rect width="132" height="100" rx="10"/><path class="hd" d="M0 26H132"/>
+                                <text class="th" x="14" y="18">users</text>
+                                <text x="14" y="46">id</text><text class="key" x="118" y="46" text-anchor="end">PK</text>
+                                <text x="14" y="68">nome</text>
+                                <text x="14" y="90">perfil</text>
+                            </g>
+                            <g class="tbl" style="--d:.25s" transform="translate(194 112)">
+                                <rect width="132" height="122" rx="10"/><path class="hd" d="M0 26H132"/>
+                                <text class="th" x="14" y="18">projects</text>
+                                <text x="14" y="46">id</text><text class="key" x="118" y="46" text-anchor="end">PK</text>
+                                <text x="14" y="68">titulo</text>
+                                <text x="14" y="90">user_id</text><text class="key" x="118" y="90" text-anchor="end">FK</text>
+                                <text x="14" y="112">imagem</text>
+                            </g>
+                            <g class="tbl" style="--d:.45s" transform="translate(362 30)">
+                                <rect width="132" height="100" rx="10"/><path class="hd" d="M0 26H132"/>
+                                <text class="th" x="14" y="18">gallery</text>
+                                <text x="14" y="46">id</text><text class="key" x="118" y="46" text-anchor="end">PK</text>
+                                <text x="14" y="68">project_id</text><text class="key" x="118" y="68" text-anchor="end">FK</text>
+                                <text x="14" y="90">foto</text>
+                            </g>
+
+                            <circle class="pkt" r="4">
+                                <animateMotion dur="3.2s" repeatCount="indefinite" path="M158 76 C 176 76 176 198 194 198"/>
+                            </circle>
+                            <circle class="pkt" r="4">
+                                <animateMotion dur="3.2s" begin="1.6s" repeatCount="indefinite" path="M326 154 C 344 154 344 94 362 94"/>
+                            </circle>
+                        </svg>
+                    </div>
+                    <div class="sv-info">
+                        <p class="sv-desc" data-i18n="s2_p">
+                            Criação de sistemas e ferramentas digitais para optimizar processos,
+                            organizar informação e apoiar a gestão e as operações de negócios.
+                        </p>
+                        <div class="sv-cols">
+                            <div>
+                                <h4 data-i18n="sv_deliver">Entregas</h4>
+                                <ul>
+                                    <li data-i18n="sv_d2_1">Painéis administrativos</li>
+                                    <li data-i18n="sv_d2_2">Gestão de conteúdos e galerias</li>
+                                    <li data-i18n="sv_d2_3">Bases de dados MySQL</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 data-i18n="sv_focus">Foco</h4>
+                                <p class="sv-focus" data-i18n="sv_f2">Processos · Informação · Operações</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03 · Design Digital e Comunicação Visual -->
+                <div class="sv-panel" id="sv-p3" role="tabpanel" aria-labelledby="sv-t3">
+                    <div class="sv-fig fig-design" aria-hidden="true">
+                        <span class="sv-figlabel">FIG. 03</span>
+                        <span class="d-grid"></span>
+                        <div class="d-swatches">
+                            <i style="--c:#080B12;--d:0s"><span></span><b>#080B12</b></i>
+                            <i style="--c:#172B4D;--d:.15s"><span></span><b>#172B4D</b></i>
+                            <i style="--c:#8F101B;--d:.3s"><span></span><b>#8F101B</b></i>
+                            <i style="--c:#F4F3EE;--d:.45s"><span></span><b>#F4F3EE</b></i>
+                        </div>
+                        <div class="d-type"><span class="aa-sans">Aa</span><span class="aa-serif">Aa</span></div>
+                    </div>
+                    <div class="sv-info">
+                        <p class="sv-desc" data-i18n="s3_p">
+                            Conceito e desenvolvimento de interfaces, materiais gráficos e peças de
+                            comunicação visual, com atenção à identidade, hierarquia visual e consistência da marca.
+                        </p>
+                        <div class="sv-cols">
+                            <div>
+                                <h4 data-i18n="sv_deliver">Entregas</h4>
+                                <ul>
+                                    <li data-i18n="sv_d3_1">Conceito de interfaces</li>
+                                    <li data-i18n="sv_d3_2">Materiais gráficos</li>
+                                    <li data-i18n="sv_d3_3">Peças de comunicação visual</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 data-i18n="sv_focus">Foco</h4>
+                                <p class="sv-focus" data-i18n="sv_f3">Identidade · Hierarquia visual · Consistência</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 04 · Consultoria e Apoio Tecnológico -->
+                <div class="sv-panel" id="sv-p4" role="tabpanel" aria-labelledby="sv-t4">
+                    <div class="sv-fig fig-consult" aria-hidden="true">
+                        <span class="sv-figlabel">FIG. 04</span>
+                        <ol class="f-flow">
+                            <li class="n1">
+                                <span class="f-dot"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>
+                                <span class="f-txt" data-i18n="sv_n1">Necessidade</span><span class="f-mono">input</span>
+                            </li>
+                            <li class="n2">
+                                <span class="f-dot"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>
+                                <span class="f-txt" data-i18n="sv_n2">Análise</span><span class="f-mono">process</span>
+                            </li>
+                            <li class="n3">
+                                <span class="f-dot"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>
+                                <span class="f-txt" data-i18n="sv_n3">Solução</span><span class="f-mono">output</span>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="sv-info">
+                        <p class="sv-desc" data-i18n="s4_p">
+                            Orientação na escolha, utilização e melhoria de ferramentas tecnológicas,
+                            procurando soluções adequadas aos objectivos de cada projecto.
+                        </p>
+                        <div class="sv-cols">
+                            <div>
+                                <h4 data-i18n="sv_deliver">Entregas</h4>
+                                <ul>
+                                    <li data-i18n="sv_d4_1">Escolha de ferramentas</li>
+                                    <li data-i18n="sv_d4_2">Melhoria de processos digitais</li>
+                                    <li data-i18n="sv_d4_3">Apoio na utilização</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 data-i18n="sv_focus">Foco</h4>
+                                <p class="sv-focus" data-i18n="sv_f4">Adequação · Clareza · Objectivos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="services-footnote">
+            <span class="services-footnote-line"></span>
+            <p data-i18n="serv_note">
+                Pensamento técnico. Execução cuidada. Resultados com propósito.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="projectos" class="block projects-section">
+    <div class="block-inner">
+
+        <div class="services-heading">
+            <span class="services-kicker">
+                <span class="kicker-line"></span>
+                <span data-i18n="pj_label">TRABALHO SELECCIONADO</span>
+            </span>
+
+            <h2 data-i18n="proj_title">Projectos desenvolvidos.</h2>
+
+            <p class="lead" data-i18n="proj_text">
+                Websites e painéis administrativos que desenvolvi para
+                organizações moçambicanas, do desenho da interface à base de dados.
+            </p>
+        </div>
+
+        <!-- ============ PROJECTO 01 · FUNDEC ============ -->
+        <article class="p-case" style="--c1:#0b1f3a; --c2:#c4001a;">
+
+            <div class="p-visual">
+                <span class="p-fig">PROJ. 01</span>
+
+                <div class="p-device">
+                    <div class="p-top">
+                        <i></i><i></i><i></i>
+                        <span class="p-url">https://fundec.org.mz/</span>
+                    </div>
+
+                    <div class="p-screen">
+                        <!-- esboço mostrado quando a captura ainda não existe -->
+                        <div class="p-sk" aria-hidden="true">
+                            <div class="nav"><b></b><i></i><i></i><i></i></div>
+                            <div class="hero"><u></u><u></u><em></em></div>
+                            <div class="row"><span></span><span></span><span></span></div>
+                        </div>
+                        <img src="images/fundec-site.png" loading="lazy"
+                             alt="Interface do website FUNDEC" data-i18n-alt="pj_alt1"
+                             onerror="this.style.display='none'">
+                    </div>
+                </div>
+
+                <div class="p-logo">
+                    <img src="images/FUNDEC-logo.png" alt="Logótipo FUNDEC" loading="lazy"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+                    <span class="p-logo-fb">FD</span>
+                </div>
+            </div>
+
+            <div class="p-meta">
+                <p class="p-count">01 / 02</p>
+                <p class="p-type" data-i18n="p1_type">Website institucional e painel administrativo</p>
+                <h3>FUNDEC</h3>
+                <p class="p-desc" data-i18n="p1_desc">
+                    Website da Fundação para a Competitividade Empresarial, com
+                    painel para gestão de notícias e galeria de fotografias com lightbox.
+                </p>
+
+                <dl class="p-spec">
+                    <div>
+                        <dt data-i18n="pj_k_mod">Módulos</dt>
+                        <dd>
+                            <ul>
+                                <li data-i18n="pj_m1_1">Notícias com editor e upload de imagens</li>
+                                <li data-i18n="pj_m1_2">Galeria de fotografias com lightbox</li>
+                                <li data-i18n="pj_m1_3">Painel administrativo</li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt data-i18n="pj_k_stack">Stack</dt>
+                        <dd class="p-stack">PHP · MySQL · JavaScript · CSS</dd>
+                    </div>
+                    <div>
+                        <dt data-i18n="pj_k_brand">Marca</dt>
+                        <dd class="p-brand">
+                            <span><i style="background:#0b1f3a"></i>#0B1F3A</span>
+                            <span><i style="background:#c4001a"></i>#C4001A</span>
+                        </dd>
+                    </div>
+                </dl>
+
+               
+                <a class="p-link" href="https://fundec.org.mz/" target="_blank" rel="noopener noreferrer">
+                    <span data-i18n="pj_visit">Ver website</span> <span aria-hidden="true">↗</span>
+                </a>
+               
+            </div>
+        </article>
+
+        <!-- ============ PROJECTO 02 · FUNDVISH ============ -->
+        <article class="p-case" style="--c1:#082d57; --c2:#7bd62c;">
+
+            <div class="p-visual">
+                <span class="p-fig">PROJ. 02</span>
+
+                <div class="p-device">
+                    <div class="p-top">
+                        <i></i><i></i><i></i>
+                        <span class="p-url">fundvish / index.php</span>
+                    </div>
+
+                    <div class="p-screen">
+                        <div class="p-sk" aria-hidden="true">
+                            <div class="nav"><b></b><i></i><i></i><i></i></div>
+                            <div class="hero"><u></u><u></u><em></em></div>
+                            <div class="row"><span></span><span></span><span></span></div>
+                        </div>
+                        <img src="images/fundvish-site.png" loading="lazy"
+                             alt="Interface do website FUNDVISH" data-i18n-alt="pj_alt2"
+                             onerror="this.style.display='none'">
+                    </div>
+                </div>
+
+                <div class="p-logo">
+                    <img src="images/FUNDVISH.png" alt="Logótipo FUNDVISH" loading="lazy"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+                    <span class="p-logo-fb">FV</span>
+                </div>
+            </div>
+
+            <div class="p-meta">
+                <p class="p-count">02 / 02</p>
+                <p class="p-type" data-i18n="p2_type">Website multipágina e painel administrativo</p>
+                <h3>FUNDVISH</h3>
+                <p class="p-desc" data-i18n="p2_desc">
+                    Website da Fundação Valter Iniciative Solidariedade e Humanismo, com
+                    formulário de doação e painel para gerir projectos e galerias.
+                </p>
+
+                <dl class="p-spec">
+                    <div>
+                        <dt data-i18n="pj_k_mod">Módulos</dt>
+                        <dd>
+                            <ul>
+                                <li data-i18n="pj_m2_1">Formulário de doação e recibos</li>
+                                <li data-i18n="pj_m2_2">Gestão de projectos e galerias</li>
+                                <li data-i18n="pj_m2_3">Perfis de acesso (admin / editor)</li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt data-i18n="pj_k_stack">Stack</dt>
+                        <dd class="p-stack">PHP · MySQL · JavaScript · CSS</dd>
+                    </div>
+                    <div>
+                        <dt data-i18n="pj_k_brand">Marca</dt>
+                        <dd class="p-brand">
+                            <span><i style="background:#082d57"></i>#082D57</span>
+                            <span><i style="background:#7bd62c"></i>#7BD62C</span>
+                        </dd>
+                    </div>
+                </dl>
+
+                <!-- Se o site estiver online, descomenta e coloca o link:
+                <a class="p-link" href="https://O-SITE-DA-FUNDVISH" target="_blank" rel="noopener noreferrer">
+                    <span data-i18n="pj_visit">Ver website</span> <span aria-hidden="true">↗</span>
+                </a>
+                -->
+            </div>
+        </article>
+
+        <a class="p-more" href="https://github.com/laytonvuma-gif" target="_blank" rel="noopener noreferrer">
+            <span class="p-more-line"></span>
+            <span data-i18n="pj_more">Mais código e projectos no GitHub</span>
+            <span aria-hidden="true">↗</span>
+        </a>
+
+    </div>
+</section>
+
+
+
+       
+
+
+        <section id="contacto" class="block contact">
+    <div class="block-inner">
+
+        <header class="ct-head">
+            <p class="ct-status">
+                <span class="dot" aria-hidden="true"></span>
+                <span data-i18n="c_status">Engenheiro de Software · disponível para novos projectos</span>
+            </p>
+
+            <h2 class="ct-title">
+                <span data-i18n="ct_t1">Vamos construir</span>
+                <span class="serif" data-i18n="ct_t2">algo que funcione.</span>
+            </h2>
+
+            <p class="ct-lead" data-i18n="c_text">
+                Websites, sistemas web e painéis administrativos à medida. Conte-me o que
+                precisa e encontramos, em conjunto, a melhor solução.
+            </p>
+        </header>
+
+        <div class="ct-layout">
+
+            <!-- Coluna esquerda: identidade técnica + redes -->
+            <aside class="ct-side">
+
+                <div class="code-window">
+                    <div class="code-bar">
+                        <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="code-file">layton-vuma.js</span>
+                    </div>
+                    <pre class="code"><code><span class="ln"><span class="k">const</span> <span class="v">engenheiro</span> <span class="o">=</span> <span class="o">{</span></span><span class="ln">  <span class="p">nome</span><span class="o">:</span> <span class="s">"Layton Vuma"</span><span class="o">,</span></span><span class="ln">  <span class="p">funcao</span><span class="o">:</span> <span class="s">"Engenheiro de Software"</span><span class="o">,</span></span><span class="ln">  <span class="p">stack</span><span class="o">:</span> <span class="o">[</span><span class="s">"PHP"</span><span class="o">,</span> <span class="s">"MySQL"</span><span class="o">,</span> <span class="s">"JavaScript"</span><span class="o">,</span> <span class="s">"HTML/CSS"</span><span class="o">],</span></span><span class="ln">  <span class="p">localizacao</span><span class="o">:</span> <span class="s">"Moçambique"</span><span class="o">,</span></span><span class="ln">  <span class="p">disponivel</span><span class="o">:</span> <span class="k">true</span><span class="o">,</span></span><span class="ln"><span class="o">};</span></span><span class="ln"></span><span class="ln"><span class="v">engenheiro</span><span class="o">.</span><span class="f">contactar</span><span class="o">();</span> <span class="c">// o próximo passo é seu</span><span class="cursor" aria-hidden="true"></span></span></code></pre>
+                </div>
+
+                <p class="ct-social-title" data-i18n="c_social">Encontre-me também em</p>
+
+                <ul class="ct-socials">
+                    <li>
+                        <a href="https://www.instagram.com/layvuma/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+                            <span class="name">Instagram</span>
+                            <span class="go" aria-hidden="true">↗</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/layton-v-6a7633273?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+                            <span class="name">LinkedIn</span>
+                            <span class="go" aria-hidden="true">↗</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/share/19gxWiAHkf/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span>
+                            <span class="name">Facebook</span>
+                            <span class="go" aria-hidden="true">↗</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/laytonvuma-gif" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>
+                            <span class="name">GitHub</span>
+                            <span class="go" aria-hidden="true">↗</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+
+            <form class="ct-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+    
+                <input type="hidden" name="access_key" value="7ff69ebc-632a-44aa-83b1-7ea972d1d75e">
+                <input type="hidden" name="subject" value="Novo contacto do portfólio — Layton Vuma">
+                <input type="hidden" name="from_name" value="Portfólio Layton Vuma">
+                <h3 data-i18n="c_form_title">Envie-me uma mensagem</h3>
+                <p class="ct-form-sub" data-i18n="c_form_sub">A sua mensagem chega directamente ao meu e-mail.</p>
+
+                <div class="ct-row">
+                    <div class="fld">
+                        <label for="cf-nome" data-i18n="c_name">Nome</label>
+                        <input type="text" id="cf-nome" name="nome" autocomplete="name" maxlength="80" required>
+                    </div>
+                    <div class="fld">
+                        <label for="cf-email" data-i18n="ct_l_email">E-mail</label>
+                        <input type="email" id="cf-email" name="email" autocomplete="email" maxlength="120" required>
+                    </div>
+                </div>
+
+                <div class="fld">
+                    <label for="cf-tipo" data-i18n="c_type">Tipo de projecto</label>
+                    <select id="cf-tipo" name="tipo">
+                        <option value="" disabled selected data-i18n="c_select">Seleccione</option>
+                        <option value="Website" data-i18n="c_t_web">Website</option>
+                        <option value="Sistema web / painel administrativo" data-i18n="c_t_sys">Sistema web / painel administrativo</option>
+                        <option value="Outro" data-i18n="c_t_other">Outro</option>
+                    </select>
+                </div>
+
+                <div class="fld">
+                    <label for="cf-msg" data-i18n="c_msg">Mensagem</label>
+                    <textarea id="cf-msg" name="mensagem" rows="4" maxlength="3000" required></textarea>
+                </div>
+
+                <!-- anti-spam: campo escondido, não preencher -->
+                <div class="hp" aria-hidden="true">
+                    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
+                </div>
+
+                <div class="ct-actions">
+                    <button type="submit" class="ct-send">
+                        <span data-i18n="c_send">Enviar mensagem</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+                    </button>
+                    <p class="ct-feedback" role="status" aria-live="polite"></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>
+  
+    </main>
+ 
+ 
+ 
+        <div class="footer-bottom">
+            <p data-i18n="footer">&copy; 2026 Layton Vuma. Todos os direitos reservados.</p>
+            <a href="#inicio" data-i18n="f_top">Voltar ao topo ↑</a>
+        </div>
+ 
+        <div class="footer-word" aria-hidden="true">Layton Vuma</div>
     </footer>
+
+    <script>
+  /* ==========================================================
+   Layton Vuma — Portfólio
+   ÍNDICE
+   01. Idioma (PT / EN), menu móvel e cabeçalho
+   02. Formulário de contacto (Web3Forms)
+   03. Serviços (separadores com avanço automático)
+   04. Projectos (revelação ao scroll + inclinação 3D)
+   ========================================================== */
+
+
+/* ==========================================================
+   01. IDIOMA, MENU MÓVEL E CABEÇALHO
+   ========================================================== */
+(function () {
+    var T = {
+        pt: {},
+        en: {
+            nav_home: "Home", nav_about: "About me", nav_services: "Services",
+            nav_projects: "Projects", nav_contact: "Contact",
+
+            hero_intro: "Hi, I'm",
+            hero_role: "Information and Communication Technologies Engineering and Management",
+            hero_alt: "Layton Vuma in a dark formal suit and red tie",
+            card_title: "About me",
+            card_text: "I turn ideas into digital solutions, combining technology, creativity and a practical vision to tackle real challenges.",
+
+            about_h1: "Technology with purpose.", about_h2: "Results with impact.",
+            about_text: "I'm Layton Vuma, working in Information and Communication Technologies Engineering and Management. I'm interested in web development, software development and digital solutions, and in how technology can solve real problems and create value for people and organisations.",
+            about_note: "Continuous learning. Practical vision. Solution-focused.",
+            sb_k1: "Field", sb_v1: "ICT Engineering and Management",
+            sb_k2: "Focus", sb_v2: "Custom web and software",
+            sb_k3: "Based in", sb_v3: "Mozambique",
+            sb_how: "How I build", sb_layers: "4 layers",
+            sb_l1_t: "Analysis and design", sb_l1_s: "Systems analysis · UML",
+            sb_l1_d: "Requirements, flows and system modelling.",
+            sb_l2_t: "Interface", sb_l2_d: "Responsive pages that are clear and easy to use.",
+            sb_l3_t: "Logic", sb_l3_d: "Business rules, access roles and admin panels.",
+            sb_l4_t: "Data", sb_l4_d: "Modelling and secure storage of information.",
+
+            serv_label: "AREAS OF EXPERTISE",
+            serv_title: "Technology applied to real challenges.",
+            serv_text: "I develop digital solutions that combine engineering, functionality and visual thinking to address the needs of people and organisations.",
+            sv_deliver: "Deliverables", sv_focus: "Focus",
+            sv_d1_1: "Institutional websites", sv_d1_2: "Web platforms", sv_d1_3: "Responsive interfaces",
+            sv_f1: "Performance · Accessibility · User experience",
+            sv_d2_1: "Admin panels", sv_d2_2: "Content and gallery management", sv_d2_3: "MySQL databases",
+            sv_f2: "Processes · Information · Operations",
+            sv_d3_1: "Interface concepts", sv_d3_2: "Graphic materials", sv_d3_3: "Visual communication assets",
+            sv_f3: "Identity · Visual hierarchy · Consistency",
+            sv_d4_1: "Tool selection", sv_d4_2: "Digital process improvement", sv_d4_3: "Usage support",
+            sv_f4: "Fit · Clarity · Objectives",
+            sv_n1: "Need", sv_n2: "Analysis", sv_n3: "Solution",
+            s1_t: "Web Development",
+            s1_p: "Development of institutional websites, web platforms and responsive interfaces, with a focus on performance, accessibility and user experience.",
+            s2_t: "Software and Digital Solutions",
+            s2_p: "Building digital systems and tools to optimise processes, organise information and support business management and operations.",
+            s3_t: "Digital Design and Visual Communication",
+            s3_p: "Concept and development of interfaces, graphic materials and visual communication assets, with attention to identity, visual hierarchy and brand consistency.",
+            s4_t: "Technology Consulting and Support",
+            s4_p: "Guidance on the selection, use and improvement of technological tools, seeking solutions that meet each project's objectives.",
+            serv_note: "Technical thinking. Careful execution. Results with purpose.",
+
+            pj_label: "SELECTED WORK",
+            proj_title: "Projects I've built.",
+            proj_text: "Websites and admin panels I developed for Mozambican organisations, from interface design to the database.",
+            pj_k_mod: "Modules", pj_k_stack: "Stack", pj_k_brand: "Brand",
+            pj_alt1: "FUNDEC website interface", pj_alt2: "FUNDVISH website interface",
+            pj_m1_1: "News with editor and image upload",
+            pj_m1_2: "Photo gallery with lightbox",
+            pj_m1_3: "Admin panel",
+            pj_m2_1: "Donation form and receipts",
+            pj_m2_2: "Project and gallery management",
+            pj_m2_3: "Access roles (admin / editor)",
+            pj_more: "More code and projects on GitHub",
+            pj_visit: "View website",
+            p1_type: "Institutional website and admin panel",
+            p1_desc: "Website for Fundação para a Competitividade Empresarial, with a panel to manage news and a photo gallery with lightbox.",
+            p2_type: "Multi-page website and admin panel",
+            p2_desc: "Website for Fundação Valter Iniciative Solidariedade e Humanismo, with a donation form and a panel to manage projects and galleries.",
+
+            ct_t1: "Let's build", ct_t2: "something that works.",
+            ct_l_email: "E-mail",
+            c_status: "Software Engineer · available for new projects",
+            c_text: "Custom websites, web systems and admin panels. Tell me what you need and together we'll find the best solution.",
+            c_form_title: "Send me a message",
+            c_form_sub: "Your message goes straight to my inbox.",
+            c_name: "Name", c_type: "Project type", c_select: "Select",
+            c_t_web: "Website", c_t_sys: "Web system / admin panel", c_t_other: "Other",
+            c_msg: "Message", c_send: "Send message", c_social: "Find me also on",
+
+            f_top: "Back to top ↑",
+            footer: "\u00A9 2026 Layton Vuma. All rights reserved."
+        }
+    };
+
+    var nodes = document.querySelectorAll("[data-i18n]");
+    var alts = document.querySelectorAll("[data-i18n-alt]");
+
+    // guarda o texto original em português
+    nodes.forEach(function (n) { T.pt[n.dataset.i18n] = n.textContent.trim().replace(/\s+/g, " "); });
+    alts.forEach(function (n) { T.pt[n.dataset.i18nAlt] = n.getAttribute("alt"); });
+
+    var meta = document.querySelector('meta[name="description"]');
+    var metaPt = meta.getAttribute("content");
+    var metaEn = "Professional portfolio of Layton Vuma — Technology and ICT Management.";
+
+    function setLang(l) {
+        nodes.forEach(function (n) { n.textContent = T[l][n.dataset.i18n]; });
+        alts.forEach(function (n) { n.setAttribute("alt", T[l][n.dataset.i18nAlt]); });
+        document.documentElement.lang = l;
+        meta.setAttribute("content", l === "en" ? metaEn : metaPt);
+        document.getElementById("lang-current").textContent = l.toUpperCase();
+        try { localStorage.setItem("lang", l); } catch (e) {}
+    }
+
+    var saved = "pt";
+    try { saved = localStorage.getItem("lang") || "pt"; } catch (e) {}
+    if (saved === "en") setLang("en");
+
+    // seletor de idioma
+    var lang = document.querySelector(".lang");
+    var langBtn = lang.querySelector(".lang-btn");
+
+    function closeLang() {
+        lang.classList.remove("open");
+        langBtn.setAttribute("aria-expanded", "false");
+    }
+
+    langBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var open = lang.classList.toggle("open");
+        langBtn.setAttribute("aria-expanded", open);
+    });
+    lang.querySelectorAll("[data-lang]").forEach(function (b) {
+        b.addEventListener("click", function () { setLang(b.dataset.lang); closeLang(); });
+    });
+    document.addEventListener("click", closeLang);
+
+    // menu móvel
+    var header = document.querySelector(".site-header");
+    var toggle = document.querySelector(".menu-toggle");
+
+    function closeMenu() {
+        header.classList.remove("menu-open");
+        toggle.setAttribute("aria-expanded", "false");
+    }
+
+    toggle.addEventListener("click", function () {
+        var open = header.classList.toggle("menu-open");
+        toggle.setAttribute("aria-expanded", open);
+    });
+    document.querySelectorAll("#menu a").forEach(function (a) { a.addEventListener("click", closeMenu); });
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") { closeLang(); closeMenu(); }
+    });
+
+    // cabeçalho ao fazer scroll
+    function onScroll() { header.classList.toggle("scrolled", window.scrollY > 30); }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+})();
+
+
+/* ==========================================================
+   02. FORMULÁRIO DE CONTACTO
+   ========================================================== */
+(function () {
+    var form = document.getElementById("contact-form");
+    if (!form) return;
+
+    var M = {
+        pt: {
+            sending: "A enviar…",
+            ok: "Mensagem enviada. Obrigado — respondo em breve.",
+            invalid: "Preencha o nome, um e-mail válido e a mensagem.",
+            error: "Não foi possível enviar agora. Tente novamente ou use o Instagram."
+        },
+        en: {
+            sending: "Sending…",
+            ok: "Message sent. Thank you — I'll reply shortly.",
+            invalid: "Please fill in your name, a valid e-mail and a message.",
+            error: "Couldn't send right now. Please try again or use Instagram."
+        }
+    };
+
+    var btn = form.querySelector(".ct-send");
+    var out = form.querySelector(".ct-feedback");
+
+    function lang() { return document.documentElement.lang === "en" ? "en" : "pt"; }
+    function say(text, type) { out.textContent = text; out.className = "ct-feedback " + (type || ""); }
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var m = M[lang()];
+
+        var nome = form.nome.value.trim(),
+            email = form.email.value.trim(),
+            msg = form.mensagem.value.trim();
+        var okEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        form.querySelectorAll(".fld").forEach(function (f) { f.classList.remove("err"); });
+        if (!nome) form.nome.closest(".fld").classList.add("err");
+        if (!okEmail) form.email.closest(".fld").classList.add("err");
+        if (!msg) form.mensagem.closest(".fld").classList.add("err");
+        if (!nome || !okEmail || !msg) { say(m.invalid, "bad"); return; }
+
+        btn.disabled = true;
+        say(m.sending, "");
+
+        fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" } })
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+                if (d && (d.success || d.ok)) { say(m.ok, "good"); form.reset(); }
+                else { say(m.error, "bad"); }
+            })
+            .catch(function () { say(m.error, "bad"); })
+            .then(function () { btn.disabled = false; });
+    });
+})();
+
+
+/* ==========================================================
+   03. SERVIÇOS — separadores com avanço automático
+   ========================================================== */
+(function () {
+    var root = document.querySelector(".sv-layout");
+    if (!root) return;
+
+    var strip = root.querySelector(".sv-tabs");
+    var tabs = [].slice.call(root.querySelectorAll(".sv-tab"));
+    var panels = [].slice.call(root.querySelectorAll(".sv-panel"));
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var cur = 0;
+
+    if (reduce) {
+        root.classList.add("no-auto");
+        root.querySelectorAll("svg").forEach(function (s) { if (s.pauseAnimations) s.pauseAnimations(); });
+    }
+
+    function select(i, focus) {
+        cur = i;
+        tabs.forEach(function (t, k) {
+            var on = k === i;
+            t.classList.toggle("is-active", on);
+            t.setAttribute("aria-selected", on);
+            t.tabIndex = on ? 0 : -1;
+            panels[k].classList.toggle("is-active", on);
+        });
+
+        // reinicia a barra de progresso do separador activo
+        var p = tabs[i].querySelector(".sv-progress");
+        p.style.animation = "none"; void p.offsetWidth; p.style.animation = "";
+
+        if (focus) tabs[i].focus({ preventScroll: true });
+
+        // em telemóvel a lista é horizontal: centra o separador activo
+        if (strip.scrollWidth > strip.clientWidth) {
+            var r = tabs[i].getBoundingClientRect(), s = strip.getBoundingClientRect();
+            strip.scrollBy({ left: r.left - s.left - 16, behavior: reduce ? "auto" : "smooth" });
+        }
+    }
+
+    tabs.forEach(function (t, i) {
+        t.addEventListener("click", function () { select(i); });
+        // quando a barra enche, avança para o serviço seguinte
+        t.querySelector(".sv-progress").addEventListener("animationend", function () {
+            if (!reduce && cur === i) select((i + 1) % tabs.length);
+        });
+    });
+
+    // teclado (padrão ARIA de separadores)
+    strip.addEventListener("keydown", function (e) {
+        var k = e.key, n = tabs.length;
+        if (k === "ArrowDown" || k === "ArrowRight") { e.preventDefault(); select((cur + 1) % n, true); }
+        else if (k === "ArrowUp" || k === "ArrowLeft") { e.preventDefault(); select((cur - 1 + n) % n, true); }
+        else if (k === "Home") { e.preventDefault(); select(0, true); }
+        else if (k === "End") { e.preventDefault(); select(n - 1, true); }
+    });
+
+    // pausa ao interagir e quando a secção não está visível
+    root.addEventListener("mouseenter", function () { root.classList.add("paused-hover"); });
+    root.addEventListener("mouseleave", function () { root.classList.remove("paused-hover"); });
+    root.addEventListener("focusin", function () { root.classList.add("paused-hover"); });
+    root.addEventListener("focusout", function () { root.classList.remove("paused-hover"); });
+
+    if ("IntersectionObserver" in window) {
+        new IntersectionObserver(function (en) {
+            root.classList.toggle("paused-view", !en[0].isIntersecting);
+        }, { threshold: 0.3 }).observe(root);
+    } else {
+        root.classList.remove("paused-view");
+    }
+
+    select(0);
+})();
+
+
+/* ==========================================================
+   04. PROJECTOS — revelação ao scroll + inclinação 3D
+   ========================================================== */
+(function () {
+    var sec = document.getElementById("projectos");
+    if (!sec) return;
+
+    var cases = [].slice.call(sec.querySelectorAll(".p-case"));
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // revelação ao fazer scroll + pré-visualização automática do site a "rolar"
+    if (!reduce && "IntersectionObserver" in window) {
+        sec.classList.add("pj-js");
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (!e.isIntersecting) return;
+                var c = e.target;
+                c.classList.add("in");
+                io.unobserve(c);
+                setTimeout(function () { c.classList.add("is-scroll"); }, 1300);
+                setTimeout(function () { c.classList.remove("is-scroll"); }, 9800);
+            });
+        }, { threshold: 0.25 });
+        cases.forEach(function (c) { io.observe(c); });
+    }
+
+    // inclinação 3D do ecrã com o rato (só em dispositivos com rato)
+    if (!reduce && window.matchMedia("(hover: hover)").matches) {
+        cases.forEach(function (c) {
+            var v = c.querySelector(".p-visual"), d = c.querySelector(".p-device");
+            v.addEventListener("pointermove", function (e) {
+                var r = v.getBoundingClientRect();
+                var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+                d.style.setProperty("--ry", ((x - 0.5) * 8).toFixed(2) + "deg");
+                d.style.setProperty("--rx", ((0.5 - y) * 6).toFixed(2) + "deg");
+                d.style.setProperty("--mx", (x * 100).toFixed(1) + "%");
+                d.style.setProperty("--my", (y * 100).toFixed(1) + "%");
+            });
+            v.addEventListener("pointerleave", function () {
+                d.style.setProperty("--rx", "0deg");
+                d.style.setProperty("--ry", "0deg");
+            });
+        });
+    }
+})();
+</script>
 
 </body>
 </html>
