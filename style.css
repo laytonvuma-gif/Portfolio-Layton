@@ -1,27 +1,4 @@
-/* ==========================================================
-   Layton Vuma — Portfólio
-   Identidade: azul-noite, vermelho profundo, branco-pérola
 
-   ÍNDICE
-   01. Variáveis, reset e base
-   02. Cabeçalho (logótipo, menu, idioma)
-   03. Hero
-   04. Secções (base partilhada)
-   05. Sobre mim
-   06. Serviços
-   07. Projectos
-   08. Contacto
-   09. Rodapé
-   10. Acessibilidade (movimento reduzido)
-
-   Cada secção traz os seus próprios @media no fim.
-   Breakpoints usados: 1000px, 760px, 600px.
-   ========================================================== */
-
-
-/* ==========================================================
-   01. VARIÁVEIS, RESET E BASE
-   ========================================================== */
 
 :root {
     /* cores da marca */

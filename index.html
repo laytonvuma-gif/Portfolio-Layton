@@ -620,8 +620,6 @@
         </header>
 
         <div class="ct-layout">
-
-            <!-- Coluna esquerda: identidade técnica + redes -->
             <aside class="ct-side">
 
                 <div class="code-window">
@@ -701,7 +699,6 @@
                     <textarea id="cf-msg" name="mensagem" rows="4" maxlength="3000" required></textarea>
                 </div>
 
-                <!-- anti-spam: campo escondido, não preencher -->
                 <div class="hp" aria-hidden="true">
                     <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
                 </div>
@@ -732,19 +729,7 @@
     </footer>
 
     <script>
-  /* ==========================================================
-   Layton Vuma — Portfólio
-   ÍNDICE
-   01. Idioma (PT / EN), menu móvel e cabeçalho
-   02. Formulário de contacto (Web3Forms)
-   03. Serviços (separadores com avanço automático)
-   04. Projectos (revelação ao scroll + inclinação 3D)
-   ========================================================== */
-
-
-/* ==========================================================
-   01. IDIOMA, MENU MÓVEL E CABEÇALHO
-   ========================================================== */
+ 
 (function () {
     var T = {
         pt: {},
@@ -895,9 +880,6 @@
 })();
 
 
-/* ==========================================================
-   02. FORMULÁRIO DE CONTACTO
-   ========================================================== */
 (function () {
     var form = document.getElementById("contact-form");
     if (!form) return;
@@ -952,10 +934,6 @@
     });
 })();
 
-
-/* ==========================================================
-   03. SERVIÇOS — separadores com avanço automático
-   ========================================================== */
 (function () {
     var root = document.querySelector(".sv-layout");
     if (!root) return;
